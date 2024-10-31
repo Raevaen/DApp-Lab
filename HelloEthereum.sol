@@ -16,4 +16,9 @@ contract HelloEthereum {
         // updateMessage is a function allowing anyone to change the stored message via public keyword.
         message = newMessage;
     }
+
+    // Function to get the message
+    function getMessage() public view returns (string memory) {
+        return message;
+    }
 }
